@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./fonts/Outfit-Regular.ttf") format("truetype");
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Outfit";
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smaller-container {
+  display: flex;
+  width: 18em;
+  height: 75%;
+  flex-direction: column;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  background-color: hsl(178, 100%, 50%);
+  background-image: url("./images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 99;
+}
+
+.image-equil:hover {
+  opacity: 0.5;
+}
+
+.image-equil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.description {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.icons-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#equil {
+  color: hsl(178, 100%, 50%);
+}
+
+#clock {
+  color: hsl(215, 51%, 70%);
+}
+
+.line-break {
+  width: 100%;
+  height: 0.25px;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.avatar-cont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.avatar {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.avatar_desc {
+  color: hsl(215, 51%, 70%);
+  font-size: 15px;
+}
+
+#avatar_name {
+  color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 1440px) {
+  .smaller-container {
+    width: 18em;
+    height: 75%;
+  }
+}
